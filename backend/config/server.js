@@ -11,9 +11,4 @@ server.listen(port, function() {
     console.log(`BACKEND is running on port ${port}.`)
 })
 
-server.use((req, res, next) => {
-    console.log('meu middleware 1')
-    next()
-})
-
 module.exports = server
